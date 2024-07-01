@@ -1,0 +1,29 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+	
+	public static void main(String[] args) {
+	
+		Scanner entrada = new Scanner(System.in);
+		
+		String dia;
+		
+		System.out.println("Digite um dia da semana: ");
+		dia = entrada.next();
+		
+		if(dia == "Dommingo") {
+
+		System.out.println(1);
+		}
+
+		
+		
+		
+		
+		
+	entrada.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {
+	
+	public static void main(String[] args) {
+	
+		Scanner entrada = new Scanner(System.in);
+		
+		String dia;
+		
+		dia = entrada.next();
+		
+		
+		
+		
+		
+	entrada.close();
+	}
+
+}

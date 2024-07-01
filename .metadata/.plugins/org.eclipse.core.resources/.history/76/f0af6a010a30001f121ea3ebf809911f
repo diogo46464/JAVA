@@ -1,0 +1,14 @@
+package controle;
+
+public class DesafioDiaSemana {
+	
+	public static void main(String[] args) {
+		
+		
+		// Domingo -> 1
+		// Quarta -> 4
+		// Terça -> 3
+	 //...
+	}
+
+}
