@@ -54,6 +54,7 @@ JAVA/
 ├── ex_1 … ex_34
 └── README.md
 
+
 🏗️ Destaques técnicos
 
 Alguns pontos que demonstram minha base como desenvolvedor backend:
