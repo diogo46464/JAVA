@@ -1,0 +1,16 @@
+package util;
+
+public class CurrencyConverter {
+	
+	public static double IOF = 0.06;
+	
+	
+	public static double impostoDolar(double valorDoDolar, double dolarComprado) {
+		
+		  double total = valorDoDolar * dolarComprado;
+		  return total += total * IOF;
+
+	}
+	
+
+}

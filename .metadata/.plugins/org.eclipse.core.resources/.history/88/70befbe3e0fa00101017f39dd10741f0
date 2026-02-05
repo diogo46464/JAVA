@@ -1,0 +1,32 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		
+		
+		int N = sc.nextInt();
+		
+		double valor1 = 0.0;
+		double valor2 = 0.0;
+		double valor3 = 0.0;
+		double valor4 = 0.0;
+		double valor5 = 0.0;
+		double valor6 = 0.0;
+		double valor7 = 0.0;
+		double valor8 = 0.0;
+		double valor9 = 0.0;
+		
+		
+		
+		
+		sc.close();
+		
+		
+	}
+
+}

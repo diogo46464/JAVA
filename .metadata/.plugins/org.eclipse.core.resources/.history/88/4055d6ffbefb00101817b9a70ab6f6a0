@@ -1,0 +1,40 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Product name, price, quantity, total;
+		
+		name = new Product();
+		price = new Product();
+		quantity = new Product();
+		total = new Product();
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter product data: ");
+		System.out.print("Name: ");
+		name.Name = sc.next();
+		
+		System.out.println("Price: " );
+		price.Price = sc.nextDouble();
+		
+		System.out.println("Quantity in stock: ");
+		quantity.Quantity = sc.nextInt();
+		
+		
+		System.out.printf("Product data:"+ name + ", $ %.2f%n, " + price + "Total: $ %.2f%n" + );
+		
+		
+		
+		sc.close();
+		
+	}
+
+}
