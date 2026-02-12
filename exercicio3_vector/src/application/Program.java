@@ -33,8 +33,8 @@ public class Program {
 		for(int i = 0; i<n; i++) {
 			alturaTotal += altura[i];
 		}
-		
 		double mediaAltura = alturaTotal / n;
+		
 		System.out.printf("Altura média: %.2f%n ", mediaAltura );
 		
 		int menoresDe16 = 0;
@@ -43,8 +43,8 @@ public class Program {
 				menoresDe16++;
 			}
 		}
-		
 		double porcentagem = (double) menoresDe16 / n * 100;
+		
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n ", porcentagem);
 		
 		for(int i = 0; i<n; i++) {
