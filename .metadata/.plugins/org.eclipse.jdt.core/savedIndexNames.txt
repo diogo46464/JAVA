@@ -24,6 +24,7 @@ INDEX VERSION 1.134+C:\Users\dpincetta\OneDrive - Fugini Alimentos Ltda\Área de
 2671918860.index
 539476124.index
 1837817131.index
+555568528.index
 4003013799.index
 3808811720.index
 2029654539.index
@@ -47,6 +48,7 @@ INDEX VERSION 1.134+C:\Users\dpincetta\OneDrive - Fugini Alimentos Ltda\Área de
 3278242645.index
 1895674116.index
 1973237526.index
+1587680339.index
 1540416199.index
 3573201553.index
 3900881695.index
@@ -54,8 +56,8 @@ INDEX VERSION 1.134+C:\Users\dpincetta\OneDrive - Fugini Alimentos Ltda\Área de
 3921728465.index
 3762465941.index
 752341585.index
-2156209520.index
 2666778664.index
+2156209520.index
 255160497.index
 3128957763.index
 3896840090.index
