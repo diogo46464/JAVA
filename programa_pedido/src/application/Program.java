@@ -14,7 +14,10 @@ import entitties.enums.OrderStatus;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner (System.in);
 		
@@ -25,33 +28,28 @@ public class Program {
 		System.out.print("Email: ");
 		String email = sc.nextLine();
 		System.out.print("Birth date (DD/MM/YYYY): ");
-		String birthDateStr = sc.next();   // lê como String, ex: "15/03/1985"
-
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date birthDate = null;
-
-		try {
-		    birthDate = dateFormat.parse(birthDateStr);
-		} catch (ParseException e) {
-		    System.out.println("Formato de data inválido! Usando data atual.");
-		    birthDate = new Date();
-		}
+		Date birthDate = sdf.parse(sc.next());  
 		
+		
+
 		Client client = new Client(name, email, birthDate);
 		
 		System.out.println("Enter order data: ");
 		System.out.print("Status: ");
-		OrderStatus status = OrderStatus.valueOf(sc.next().toUpperCase());
+		OrderStatus status = OrderStatus.valueOf(sc.next());
 		Order order = new Order(new Date(), status, client);
+	
 		
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt();
 		
-		for(int i =1; i<=n; i++) {
-			System.out.println("Enter #" + i + " item data:");
+		for(int i =0; i<n; i++) {
+			System.out.println("Enter #" + (i + 1) + " item data:");
 			
+			sc.nextLine();
 			System.out.print("Product name:");
-			String productName = sc.next();
+			String productName = sc.nextLine();
+			
 			
 			System.out.print("Product Price: ");
 			double price = sc.nextDouble();
@@ -65,12 +63,9 @@ public class Program {
 		}
 		
 		System.out.println();
-		System.out.println(order.orderSummary());
+		System.out.println(order);
 		
-		
-		
-		
-		
+	
 		sc.close();
 
 	}
